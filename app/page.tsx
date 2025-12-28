@@ -89,25 +89,21 @@ function Services() {
         
         <div style={styles.servicesGrid}>
           <ServiceCard 
-            icon="📥"
             title="Data Ingestion & Control"
             description="Bring scattered Excel, CSV, PDF, and system data into one controlled, structured environment. Replace manual file hunting with automated ingestion."
             features={["Multi-format ingestion", "Source tracking", "Version control", "Single source of truth"]}
           />
           <ServiceCard 
-            icon="✓"
             title="Validation & Quality Control"
             description="Apply insurance-specific rules to ensure data correctness, completeness, and compliance before it moves downstream."
             features={["Field validation", "Logical checks", "Compliance rules", "Early error detection"]}
           />
           <ServiceCard 
-            icon="⚖️"
             title="Reconciliation & Consistency"
             description="Ensure numbers add up across datasets, time periods, and reports. Catch mismatches before they reach insurers."
             features={["Cross-dataset checks", "Aggregation validation", "Discrepancy flagging", "Financial accuracy"]}
           />
           <ServiceCard 
-            icon="📊"
             title="Reporting & Bordereaux"
             description="Generate reliable, standardised reports and bordereaux that insurers and regulators can trust every period."
             features={["Standardised formats", "Monthly/quarterly cycles", "Audit trails", "Repeatable outputs"]}
@@ -118,10 +114,9 @@ function Services() {
   );
 }
 
-function ServiceCard({ icon, title, description, features }: { icon: string; title: string; description: string; features: string[] }) {
+function ServiceCard({ title, description, features }: { title: string; description: string; features: string[] }) {
   return (
     <div style={styles.serviceCard}>
-      <div style={styles.serviceIcon}>{icon}</div>
       <h3 style={styles.serviceTitle}>{title}</h3>
       <p style={styles.serviceDescription}>{description}</p>
       <div style={styles.serviceFeatures}>
@@ -642,10 +637,6 @@ const styles: Record<string, React.CSSProperties> = {
     borderTop: '4px solid #1e40af',
     transition: 'transform 0.2s, box-shadow 0.2s',
     width: '100%',
-  },
-  serviceIcon: {
-    fontSize: 'clamp(32px, 4vw, 40px)',
-    marginBottom: 'clamp(16px, 2vw, 20px)',
   },
   serviceTitle: {
     fontSize: 'clamp(18px, 2.5vw, 22px)',
