@@ -12,6 +12,10 @@ export const metadata: Metadata = {
     shortcut: '/favicon.ico',
     apple: '/favicon.ico',
   },
+  other: {
+    // Bing verification
+    'msvalidate.01': '161B25536EAE248DFB8EE1163025B97C',
+  },
 }
 
 export default function RootLayout({
