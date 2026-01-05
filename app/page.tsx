@@ -39,16 +39,16 @@ function Header() {
       <div style={styles.headerContainer}>
         <div style={styles.hero}>
           <div style={styles.heroContent}>
-            <div style={styles.tagline}>SPECIALISED INSURANCE DATA AUTOMATION</div>
+            <div style={styles.tagline}>ENTERPRISE DATA WORKFLOW AUTOMATION</div>
             <h1 style={styles.heroTitle}>
-              Replace manual insurance data workflows
+              Replace manual data workflows
               <br />
               with controlled, automated processes
             </h1>
             <p style={styles.heroSubtitle}>
-              We specialise in transforming insurance data workflows — from ingestion through to bordereaux — 
-              ensuring accuracy, consistency, and audit-ready reporting. Designed specifically for brokers 
-              and MGAs managing complex reporting requirements.
+              We transform complex data workflows — from ingestion through to reporting — 
+              ensuring accuracy, consistency, and audit-ready outputs. Designed for businesses 
+              across any industry managing data-intensive processes.
             </p>
             <div style={styles.heroButtons}>
               <a href="#contact" style={styles.primaryButton}>Book a Free Discovery Call</a>
@@ -66,7 +66,7 @@ function Header() {
             </div>
             <div style={styles.statCard}>
               <div style={styles.statTitle}>Results</div>
-              <div style={styles.statDesc}>Achieve reliable, error-free bordereaux and reporting with consistent accuracy</div>
+              <div style={styles.statDesc}>Achieve reliable, error-free reporting with consistent accuracy across all processes</div>
             </div>
           </div>
         </div>
@@ -81,7 +81,7 @@ function Services() {
       <div style={styles.sectionContainer}>
         <div style={styles.sectionHeader}>
           <div style={styles.sectionLabel}>OUR SPECIALITY</div>
-          <h2 style={styles.sectionTitle}>Insurance Data Workflow Solutions</h2>
+          <h2 style={styles.sectionTitle}>Enterprise Data Workflow Solutions</h2>
           <p style={styles.sectionDescription}>
             Replacing manual processes with controlled, repeatable, auditable data workflows
           </p>
@@ -95,18 +95,18 @@ function Services() {
           />
           <ServiceCard 
             title="Validation & Quality Control"
-            description="Apply insurance-specific rules to ensure data correctness, completeness, and compliance before it moves downstream."
-            features={["Field validation", "Logical checks", "Compliance rules", "Early error detection"]}
+            description="Apply business-specific rules to ensure data correctness, completeness, and compliance before it moves downstream."
+            features={["Field validation", "Logical checks", "Business rules", "Early error detection"]}
           />
           <ServiceCard 
             title="Reconciliation & Consistency"
-            description="Ensure numbers add up across datasets, time periods, and reports. Catch mismatches before they reach insurers."
+            description="Ensure numbers add up across datasets, time periods, and reports. Catch mismatches before they reach stakeholders."
             features={["Cross-dataset checks", "Aggregation validation", "Discrepancy flagging", "Financial accuracy"]}
           />
           <ServiceCard 
-            title="Reporting & Bordereaux"
-            description="Generate reliable, standardised reports and bordereaux that insurers and regulators can trust every period."
-            features={["Standardised formats", "Monthly/quarterly cycles", "Audit trails", "Repeatable outputs"]}
+            title="Reporting & Output Automation"
+            description="Generate reliable, standardised reports and outputs that stakeholders can trust every period."
+            features={["Standardised formats", "Scheduled cycles", "Audit trails", "Repeatable outputs"]}
           />
         </div>
       </div>
@@ -130,10 +130,10 @@ function ServiceCard({ title, description, features }: { title: string; descript
 
 function Process() {
   const steps = [
-    { number: "01", title: "Discovery & Analysis", description: "We map your current workflows, pain points, and insurer requirements in detail" },
+    { number: "01", title: "Discovery & Analysis", description: "We map your current workflows, pain points, and business requirements in detail" },
     { number: "02", title: "Rule Definition & Design", description: "Define validation rules, reconciliation logic, and reporting formats" },
     { number: "03", title: "Build & Implementation", description: "Create controlled workflows tailored to your specific operations" },
-    { number: "04", title: "Testing & Training", description: "Validate with real data, train your team, and ensure audit readiness" }
+    { number: "04", title: "Testing & Training", description: "Validate with real data, train your team, and ensure operational readiness" }
   ];
 
   return (
@@ -167,24 +167,26 @@ function About() {
       <div style={styles.sectionContainer}>
         <div style={styles.aboutGrid}>
           <div>
-            <div style={styles.sectionLabel}>WHY SPECIALISE</div>
-            <h2 style={styles.sectionTitle}>Built for Insurance Operations</h2>
+            <div style={styles.sectionLabel}>WHY CHOOSE US</div>
+            <h2 style={styles.sectionTitle}>Built for Complex Data Operations</h2>
             <p style={styles.aboutDescription}>
-              Insurance brokers and MGAs face unique challenges in data management and regulatory reporting. We provide specialised automation solutions that deliver accuracy, efficiency, and audit readiness.
+              Businesses across industries face similar challenges in data management and regulatory reporting. 
+              We provide specialised automation solutions that deliver accuracy, efficiency, and audit readiness 
+              for any data-intensive workflow.
             </p>
             <div style={styles.aboutPoints}>
               <div style={styles.aboutPoint}>
                 <div style={styles.pointIcon}>🏢</div>
                 <div>
                   <div style={styles.pointTitle}>Who We Serve</div>
-                  <div style={styles.pointDesc}>Insurance brokers, MGAs, coverholders, and delegated authority managers</div>
+                  <div style={styles.pointDesc}>Businesses across finance, insurance, healthcare, manufacturing, and professional services</div>
                 </div>
               </div>
               <div style={styles.aboutPoint}>
                 <div style={styles.pointIcon}>🎯</div>
                 <div>
                   <div style={styles.pointTitle}>Our Focus</div>
-                  <div style={styles.pointDesc}>Automated data management: bordereaux, reporting, reconciliation, and validation systems</div>
+                  <div style={styles.pointDesc}>Automated data management: reporting, reconciliation, validation, and workflow systems</div>
                 </div>
               </div>
               <div style={styles.aboutPoint}>
@@ -197,14 +199,14 @@ function About() {
             </div>
           </div>
           <div style={styles.aboutCard}>
-            <div style={styles.aboutCardTitle}>The Problem We Solve</div>
+            <div style={styles.aboutCardTitle}>Common Challenges We Solve</div>
             <div style={styles.aboutList}>
               {[
                 "Scattered data across emails, Excel, PDFs, and systems",
-                "Manual validation and error checking",
+                "Manual validation and error checking consuming valuable time",
                 "Reconciliation delays impacting reporting deadlines",
                 "Audit trail compliance and version management challenges",
-                "Over-reliance on key individuals' spreadsheets"
+                "Over-reliance on key individuals' spreadsheets and processes"
               ].map((item, index) => (
                 <div key={index} style={styles.aboutListItem}>
                   {item}
@@ -252,7 +254,7 @@ function Contact() {
       });
 
       if (response.ok) {
-        alert('Thank you! Your message has been sent successfully. We\'ll contact you to discuss your insurance data workflow needs.');
+        alert('Thank you! Your message has been sent successfully. We\'ll contact you to discuss your data workflow needs.');
         // Reset form
         setFormData({
           name: '',
@@ -277,7 +279,7 @@ function Contact() {
             <div style={styles.sectionLabelLight}>START THE CONVERSATION</div>
             <h2 style={styles.sectionTitleLight}>Discuss Your Workflow</h2>
             <p style={styles.contactDescription}>
-              Tell us about your current data processes, pain points, and insurer requirements. 
+              Tell us about your current data processes, pain points, and business requirements. 
               We'll provide a clear assessment and proposed approach.
             </p>
             <div style={styles.contactInfo}>
@@ -291,7 +293,7 @@ function Contact() {
               </div>
               <div style={styles.contactItem}>
                 <div style={styles.contactLabel}>Specialisation</div>
-                <div style={styles.contactValue}>Insurance data workflows & automation</div>
+                <div style={styles.contactValue}>Enterprise data workflow automation</div>
               </div>
             </div>
           </div>
@@ -332,11 +334,11 @@ function Contact() {
                 required
               >
                 <option value="">Primary Interest</option>
-                <option value="bordereaux">Bordereaux automation</option>
+                <option value="reporting">Reporting automation</option>
                 <option value="reconciliation">Data reconciliation</option>
-                <option value="reporting">Reporting workflow</option>
+                <option value="workflow">Workflow automation</option>
                 <option value="validation">Data validation</option>
-                <option value="other">Other insurance workflow</option>
+                <option value="other">Other workflow challenge</option>
               </select>
               <textarea
                 name="message"
@@ -365,7 +367,7 @@ function Footer() {
         <div style={styles.footerMain}>
           <div style={styles.footerLogo}>TNR Digital</div>
           <p style={styles.footerTagline}>
-            Specialised automation for insurance data workflows.
+            Specialised automation for enterprise data workflows.
             Replacing manual processes with controlled, auditable systems.
           </p>
         </div>
@@ -377,7 +379,7 @@ function Footer() {
         </div>
         <div style={styles.footerBottom}>
           <div>© {year} TNR Digital. All rights reserved.</div>
-          <div style={styles.footerNote}>Specialised in insurance operations • London-based • UK-focused</div>
+          <div style={styles.footerNote}>Enterprise workflow automation • London-based • UK-focused</div>
         </div>
       </div>
     </footer>
